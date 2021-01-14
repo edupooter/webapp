@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CoffeeTawk</title>
+    <script src="corellation.js"></script>
+</head>
+
+<body>
+    <script src="addData.js"></script>
+    <form>
+        <label for="display-name"> Variable 1:</label>
+        <input id="var1" type=text>
+        <br />
+
+        <label for="display-name"> Variable 2:</label>
+        <input id="var2" type=text>
+
+        <input type=button onclick="addData()" value="Add Variables" />
+        <input type=submit onclick="clearData()" value="Clear Variables" />
+    </form>
+    <div id="data table">
+        <h1>Data Table</h1>
+        <div id="variable1">
+            <p>Variable 1</p>
+            <div id="box1" ; style="border:1px solid black;width:150px;height:150px;overflow:auto">
+            </div>
+        </div>
+
+        <br />
+        <div id="variable2">
+            <p>Variable 2</p>
+            <div id="box2" ; style="border:1px solid black;width:150px;height:150px;overflow:auto">
+            </div>
+        </div>
+    </div>
+    <div id="result">
+        <h1>Correlation:</h1>
+        <div id="corellation">
+        </div>
+    </div>
+
+</body>
+
+</html>
